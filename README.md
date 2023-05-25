@@ -1,5 +1,4 @@
 
-Descrição:
 O projeto "Análise da Dinâmica do Pêndulo" é uma ferramenta de análise baseada em Python que se concentra no estudo da dinâmica de um sistema de pêndulo. O projeto inclui simulações e visualizações para explorar o comportamento de um pêndulo sob diferentes condições, investigando especificamente a relação entre o comprimento do pêndulo e seu período correspondente.
 
 Recursos Principais:
