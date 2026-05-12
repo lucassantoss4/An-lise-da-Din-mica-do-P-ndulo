@@ -1,11 +1,47 @@
+# 🏮 Análise da Dinâmica do Pêndulo de Ondas
 
-O projeto "Análise da Dinâmica do Pêndulo" é uma ferramenta de análise baseada em Python que se concentra no estudo da dinâmica de um sistema de pêndulo. O projeto inclui simulações e visualizações para explorar o comportamento de um pêndulo sob diferentes condições, investigando especificamente a relação entre o comprimento do pêndulo e seu período correspondente.
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![Scipy](https://img.shields.io/badge/Scipy-1.10+-green.svg)](https://scipy.org/)
+[![Status](https://img.shields.io/badge/Status-Portfolio--Ready-brightgreen.svg)]()
 
-Recursos Principais:
-  1. Simulação do Movimento do Pêndulo: O projeto utiliza métodos numéricos para simular o movimento de um pêndulo, levando em consideração parâmetros como comprimento, condições iniciais e fatores ambientais.
-  2. Cálculo do Período: A ferramenta calcula o período do pêndulo para diferentes comprimentos, analisando o comportamento oscilatório e identificando os pontos de máximo deslocamento.
-  3. Visualizações: O projeto fornece gráficos e plots interativos para visualizar o movimento do pêndulo ao longo do tempo, bem como a relação entre o comprimento e o período do pêndulo.
-  4. Análise de Dados: A ferramenta permite a análise do comportamento do pêndulo, permitindo que os usuários explorem como as mudanças no comprimento afetam o período e outras propriedades relevantes.
-  5. Repositório no GitHub: O projeto está hospedado no GitHub, fornecendo uma plataforma colaborativa para compartilhamento de código, controle de versão e engajamento da comunidade.
+Este projeto apresenta uma análise técnica profunda sobre a dinâmica de oscilação de pêndulos simples, integrando modelagem matemática clássica com validação experimental baseada em dados reais.
 
-Com o projeto "Análise da Dinâmica do Pêndulo", os usuários podem obter uma compreensão mais profunda da física por trás do comportamento de um pêndulo e explorar as relações entre comprimento e período, auxiliados por simulações e visualizações interativas.
+## 📌 Contexto
+O projeto investiga o fenômeno do **Pêndulo de Ondas**, onde múltiplos pêndulos de comprimentos variados são soltos simultaneamente, criando padrões visuais complexos devido às diferenças em seus períodos de oscilação.
+
+### Destaques Técnicos:
+- **Modelagem Numérica:** Resolução de Equações Diferenciais Ordinárias (ODEs) utilizando `scipy.integrate.odeint`.
+- **Física do Mundo Real:** Inclusão de forças dissipativas (arrasto do ar) para maior precisão.
+- **Validação:** Comparação de dados simulados com dados experimentais extraídos via software Tracker.
+- **Engenharia de Software:** Código modularizado em classes e pacotes Python.
+
+## 📂 Estrutura do Projeto
+```text
+├── data/               # Dados experimentais (CSV)
+├── notebooks/          # Análises e visualizações (Jupyter Notebook)
+├── src/                # Motor de simulação física e utilitários
+├── video pendulo.mp4   # Vídeo original do experimento
+├── requirements.txt    # Dependências para reprodução
+└── README.md
+```
+
+## 🛠️ Como Executar
+1. Crie e ative um ambiente virtual (recomendado):
+   ```bash
+   python -m venv .venv
+   # No Windows: .\.venv\Scripts\activate
+   # No Linux/Mac: source .venv/bin/activate
+   ```
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Explore a análise completa no notebook (certifique-se de configurar o Kernel do Jupyter para o ambiente virtual recém-criado):
+   `notebooks/pendulum_analysis.ipynb`
+
+## 📊 Resultados Principais
+O modelo demonstrou que a inclusão do coeficiente de arrasto ($C_d = 0.47$) foi crucial para validar a perda de energia observada no experimento real, permitindo prever com precisão o comportamento do sistema ao longo do tempo.
+
+---
+**Desenvolvido por Lucas Santos**  
+*Insper - Instituto de Ensino e Pesquisa*
